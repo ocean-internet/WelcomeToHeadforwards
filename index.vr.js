@@ -55,8 +55,9 @@ class WelcomeToHeadforwards extends Component {
                     width: 2,
                     alignItems: 'stretch',
                     transform: [
-                        {translate: [-5, 1, -1]},
+                        {translate: [-5, 2.5, -1]},
                     ],
+                    justifyContent: 'center'
                 }}
                       billboarding={'on'}>
                     <ColorChange></ColorChange>

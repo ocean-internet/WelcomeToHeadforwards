@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Text } from 'react-vr';
+import React, {Component} from 'react';
+import {Text} from 'react-vr';
 
 export default class ColorChange extends Component {
     constructor() {
@@ -11,7 +11,12 @@ export default class ColorChange extends Component {
     render() {
         return (
             <Text
-                style={{color: this.state.textColor}}
+                style={{
+                    fontSize: 0.2,
+                    textAlign: 'center',
+                    backgroundColor: 'black',
+                    color: this.state.textColor,
+                }}
                 onEnter={() => this.setState({textColor: 'red'})}
                 onExit={() => this.setState({textColor: 'white'})}>
                 This text will turn red when you look at it.
