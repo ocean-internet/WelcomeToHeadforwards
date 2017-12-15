@@ -12,11 +12,7 @@ import ColorChange from './components/color-change/component';
 class WelcomeToHeadforwards extends Component {
     render() {
         return (
-            <View style={{
-                transform: [
-                    {rotateZ: -2.5}
-                ]
-            }}>
+            <View>
                 <VideoPano source={asset('360_0002_stitched_injected.MP4')}
                            poster={asset('360_0002_stitched_injected 2017-12-06 14.34.00.jpg')}
                            autoPlay={true}
@@ -28,10 +24,8 @@ class WelcomeToHeadforwards extends Component {
                     alignItems: 'stretch',
                     transform: [
                         {translate: [-1, 1, -5]},
-                        {rotateX: 90}
                     ],
-                }}
-                      billboarding={'on'}>
+                }}>
 
                     <View style={{margin: 0.1, height: 0.3, backgroundColor: 'red'}}>
                         <Text style={{fontSize: 0.2, textAlign: 'center'}}>Red</Text>
@@ -56,10 +50,10 @@ class WelcomeToHeadforwards extends Component {
                     alignItems: 'stretch',
                     transform: [
                         {translate: [-5, 2.5, -1]},
+                        {rotateY: 90}
                     ],
                     justifyContent: 'center'
-                }}
-                      billboarding={'on'}>
+                }}>
                     <ColorChange></ColorChange>
                 </View>
             </View>
