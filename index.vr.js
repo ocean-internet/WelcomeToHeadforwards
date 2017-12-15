@@ -49,8 +49,8 @@ class WelcomeToHeadforwards extends Component {
                     width: 2,
                     alignItems: 'stretch',
                     transform: [
-                        {translate: [-5, 2.5, -1]},
-                        {rotateY: 90}
+                        {rotateY: -90},
+                        {translate: [-1, 2.5, -5]}
                     ],
                     justifyContent: 'center'
                 }}>
